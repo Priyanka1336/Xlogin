@@ -29,7 +29,7 @@ export default function Home() {
             <div style={{ color: "red" }}>Invalid username or password</div>
           )}
           <form onSubmit={handleSubmit}>
-            <label htmlFor="UserName">UserName</label>
+            <label htmlFor="UserName">Username</label>
             <input
               name="UserName"
               type="text"
