@@ -29,9 +29,9 @@ export default function Home() {
             <div style={{ color: "red" }}>Invalid username or password</div>
           )}
           <form onSubmit={handleSubmit}>
-            <label htmlFor="UserName">Username</label>
+            <label htmlFor="Username">Username</label>
             <input
-              name="UserName"
+              name="Username"
               type="text"
               value={user}
               onChange={(event) => setUser(event.target.value)}
