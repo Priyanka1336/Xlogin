@@ -29,19 +29,19 @@ export default function Home() {
             <div style={{ color: "red" }}>Invalid username or password</div>
           )}
           <form onSubmit={handleSubmit}>
-            <label htmlFor="user">UserName</label>
+            <label htmlFor="UserName">UserName</label>
             <input
-              name="user"
+              name="UserName"
               type="text"
               value={user}
               onChange={(event) => setUser(event.target.value)}
               required
             />
             <br />
-            <label htmlFor="password">Password</label>
+            <label htmlFor="Password">Password</label>
             <input
-              name="password"
-              type="password"
+              name="Password"
+              type="text"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
               required
