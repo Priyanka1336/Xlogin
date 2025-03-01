@@ -16,6 +16,11 @@ export default function Home() {
     }
   };
 
+  const handleEvent = (event) => {
+    setUser(event.target.value);
+    setW(false);
+  };
+
   return (
     <div>
       <h1>Login Page</h1>
@@ -34,7 +39,7 @@ export default function Home() {
               name="Username"
               type="text"
               value={user}
-              onChange={(event) => setUser(event.target.value)}
+              onChange={handleEvent}
               required
             />
             <br />
