@@ -8,11 +8,13 @@ export default function Home() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setW(true);
+    // setW(true);
     if (user === "user" && password === "password") {
       setYes(true);
     } else {
-      setYes(false);
+      setW(true);
+      setUser("");
+      setPassword("");
     }
   };
 
